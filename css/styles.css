@@ -99,6 +99,7 @@ body {
 .site-nav:hover, .site-nav:focus, .site-nav:active {
     color: var(--logo-color);
 }
+
 .nav-link {
     text-decoration: none;
     padding: 32px 0;
@@ -106,15 +107,16 @@ body {
 
 /* contacts */
 .contact-item {
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
 }
 .svg {
     margin-right: 10px;
 }
 .svg-phone {
-    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .contact-information {
     font-weight: 500;
         font-size: 14px;
@@ -149,7 +151,7 @@ body {
     padding-bottom: 200px;
     min-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img\ \(1\).jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -213,7 +215,7 @@ background-color: var(--button-hover-color);
     gap: 30px;
     justify-content: center;
 }
-.about-list-foto {
+/* .about-list-foto {
     list-style: none;
     display: flex;
     margin-bottom: 30px;
@@ -252,7 +254,7 @@ background-color: var(--button-hover-color);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .container-section {
     display: flex;
     justify-content: center;
@@ -260,6 +262,21 @@ background-color: var(--button-hover-color);
 }
 .list-container {
     width: 270px;
+}
+.section-container {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-section {
+    width: 70px;
+    height: 70px;   
+}
+.use-section {
 }
 
 .section-title {
@@ -280,7 +297,7 @@ background-color: var(--button-hover-color);
 }
 /* section two */
 .about {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .about-title {
@@ -353,12 +370,13 @@ background-color: var(--button-hover-color);
         line-height: calc(19 / 16);
         text-align: center;
         color: var(--accent-color);
+        margin-bottom: 16px;
 }
 .list-icon {
     list-style: none;
     display: flex;
     gap: 10px;
-    margin-top: 16px;
+    
 }
 
 .item-icon {
@@ -398,6 +416,9 @@ background-color: var(--button-hover-color);
 }
 
 .item-customers {
+    
+}
+.link-customers {
     content: "";
     width: 170px;
     height: 92px;
@@ -421,6 +442,10 @@ background-color: var(--button-hover-color);
     /* height: 252px; */
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-flex {
+    display: flex;
+    align-items:baseline;
 }
 .logo-footer {
     font-family: raleway;
@@ -452,11 +477,11 @@ margin-top: 20px;
 }
 
 .footer-contacts {
-        font-size: 14px;
-        line-height: calc(24 / 14);
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-        font-style: normal;
+font-size: 14px;
+line-height: calc(24 / 14);
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+font-style: normal;
 }
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
@@ -466,6 +491,7 @@ margin-top: 20px;
     color: var(--logo-color);
 }
 .span {
+    margin-left: 70px;
 }
 .span-title {
     font-weight: 700;
@@ -474,14 +500,27 @@ margin-top: 20px;
     letter-spacing: var(--main-spacing);
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
-.btn-list {
+.footer-list-icon {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+    gap: 10px;
+
 }
+
+.footer-icon {
+    content: "";
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 .img-list {
     list-style: none;
     background-color: var(--bg-color);
@@ -527,6 +566,13 @@ margin-top: 20px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.btn-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
 .btn {
     border: 0;
     border-radius: 4px;
@@ -571,4 +617,5 @@ margin-top: 20px;
 .btn:hover, .btn:focus, .btn:active {
     background-color: var(--logo-color);
         color: var(--bg-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
